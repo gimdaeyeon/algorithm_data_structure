@@ -12,10 +12,11 @@ public class BubbleSort1 {
       */
     public static void main(String[] args) {
         int[] arr = {7,5,23,4,7,8,1,2,5,6,8,3,1,45,6};
-        System.out.println(Arrays.toString(bubbleSort(arr)));
+        bubbleSort(arr);
+        System.out.println(Arrays.toString(arr));
     }
 
-    public static int[] bubbleSort(int[] arr){
+    public static void bubbleSort(int[] arr){
         for (int i = 0; i < arr.length; i++) {
             for (int j = 1; j < arr.length-i; j++) {
                 if(arr[j-1]>arr[j]){
@@ -25,8 +26,6 @@ public class BubbleSort1 {
                 }
             }
         }
-
-        return arr;
     }
 
 
